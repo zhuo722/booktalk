@@ -1,0 +1,22 @@
+# python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# node
+node_modules/
+frontend/dist/
+
+# app data & secrets
+backend/data/
+backend/.env
+.env
+
+# eval scratch: the indexes `run_eval.py --reuse` builds. The fixture PDF,
+# golden.json, report.md and results/*.csv are committed on purpose.
+backend/eval/.work/
+
+# os / editor
+.DS_Store

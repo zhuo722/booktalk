@@ -1,0 +1,1865 @@
+{
+  "book": {
+    "title": "A Field Guide to the Meridian Archipelago",
+    "subtitle": "Twelve Islands, Their Charters, Their Landmarks and Their Kitchens",
+    "author": "Compiled for the Assembly at Ashgate Quay",
+    "pdf": "fixture/meridian_archipelago.pdf",
+    "pages": 25,
+    "padding_paragraphs": 0,
+    "chapters": [
+      {
+        "idx": 1,
+        "title": "Chapter 1 — Kestrel Cove",
+        "island": "Kestrel Cove"
+      },
+      {
+        "idx": 2,
+        "title": "Chapter 2 — Thornbury Reach",
+        "island": "Thornbury Reach"
+      },
+      {
+        "idx": 3,
+        "title": "Chapter 3 — Grennet Point",
+        "island": "Grennet Point"
+      },
+      {
+        "idx": 4,
+        "title": "Chapter 4 — Sable Ledge",
+        "island": "Sable Ledge"
+      },
+      {
+        "idx": 5,
+        "title": "Chapter 5 — Amberlyn Skerry",
+        "island": "Amberlyn Skerry"
+      },
+      {
+        "idx": 6,
+        "title": "Chapter 6 — Quillon Bank",
+        "island": "Quillon Bank"
+      },
+      {
+        "idx": 7,
+        "title": "Chapter 7 — Merrowick Holt",
+        "island": "Merrowick Holt"
+      },
+      {
+        "idx": 8,
+        "title": "Chapter 8 — Varden Spit",
+        "island": "Varden Spit"
+      },
+      {
+        "idx": 9,
+        "title": "Chapter 9 — Ostrel Bight",
+        "island": "Ostrel Bight"
+      },
+      {
+        "idx": 10,
+        "title": "Chapter 10 — Falgrove Key",
+        "island": "Falgrove Key"
+      },
+      {
+        "idx": 11,
+        "title": "Chapter 11 — Brindlewick Sound",
+        "island": "Brindlewick Sound"
+      },
+      {
+        "idx": 12,
+        "title": "Chapter 12 — Cardrenn Strand",
+        "island": "Cardrenn Strand"
+      }
+    ]
+  },
+  "categories": [
+    "single-fact",
+    "cross-chapter",
+    "chapter-summary",
+    "not-in-book",
+    "asr-corrupted"
+  ],
+  "counts": {
+    "single-fact": 48,
+    "cross-chapter": 8,
+    "chapter-summary": 12,
+    "not-in-book": 8,
+    "asr-corrupted": 12
+  },
+  "questions": [
+    {
+      "id": "single-01-founder",
+      "category": "single-fact",
+      "question": "Who settled Kestrel Cove?",
+      "expected_answer_substrings": [
+        "Aurelia Halvard"
+      ],
+      "chapter_idx": 1,
+      "gold_chapters": [
+        1
+      ],
+      "gold_chapter_titles": [
+        "Kestrel Cove"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Kestrel Cove was settled by Aurelia Halvard, who came ashore with a single crew, a borrowed sloop and a chart drawn on the back of a tide table."
+      ],
+      "fact": "founder"
+    },
+    {
+      "id": "single-01-population",
+      "category": "single-fact",
+      "question": "How many residents does Kestrel Cove have?",
+      "expected_answer_substrings": [
+        "412"
+      ],
+      "chapter_idx": 1,
+      "gold_chapters": [
+        1
+      ],
+      "gold_chapter_titles": [
+        "Kestrel Cove"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The last count recorded 412 residents on Kestrel Cove, a figure that has held steady for two generations."
+      ],
+      "fact": "population"
+    },
+    {
+      "id": "single-01-dish",
+      "category": "single-fact",
+      "question": "What dish is Kestrel Cove known for?",
+      "expected_answer_substrings": [
+        "salt-baked murren"
+      ],
+      "chapter_idx": 1,
+      "gold_chapters": [
+        1
+      ],
+      "gold_chapter_titles": [
+        "Kestrel Cove"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The dish that belongs to Kestrel Cove is salt-baked murren, which is finished with bladderwrack butter and served in shallow bowls."
+      ],
+      "fact": "dish"
+    },
+    {
+      "id": "single-01-festival",
+      "category": "single-fact",
+      "question": "What festival does Kestrel Cove keep, and in which month?",
+      "expected_answer_substrings": [
+        "Lantern Vigil",
+        "October"
+      ],
+      "chapter_idx": 1,
+      "gold_chapters": [
+        1
+      ],
+      "gold_chapter_titles": [
+        "Kestrel Cove"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "the Lantern Vigil is held on Kestrel Cove every October and closes the working year for three days together."
+      ],
+      "fact": "festival"
+    },
+    {
+      "id": "single-02-founded",
+      "category": "single-fact",
+      "question": "In what year was Thornbury Reach chartered?",
+      "expected_answer_substrings": [
+        "1701"
+      ],
+      "chapter_idx": 2,
+      "gold_chapters": [
+        2
+      ],
+      "gold_chapter_titles": [
+        "Thornbury Reach"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Formal settlement of Thornbury Reach dates from 1701, the year the assembly at Ashgate Quay entered it in the register."
+      ],
+      "fact": "founded"
+    },
+    {
+      "id": "single-02-landmark",
+      "category": "single-fact",
+      "question": "What is the tallest structure on Thornbury Reach, and how tall is it?",
+      "expected_answer_substrings": [
+        "Widdershin Bridge",
+        "21 metres"
+      ],
+      "chapter_idx": 2,
+      "gold_chapters": [
+        2
+      ],
+      "gold_chapter_titles": [
+        "Thornbury Reach"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The tallest structure on Thornbury Reach is the Widdershin Bridge, which stands 21 metres from its base to its cap."
+      ],
+      "fact": "landmark"
+    },
+    {
+      "id": "single-02-distance",
+      "category": "single-fact",
+      "question": "How far is Thornbury Reach from Ashgate Quay?",
+      "expected_answer_substrings": [
+        "27 nautical miles"
+      ],
+      "chapter_idx": 2,
+      "gold_chapters": [
+        2
+      ],
+      "gold_chapter_titles": [
+        "Thornbury Reach"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The crossing from Ashgate Quay to Thornbury Reach is 27 nautical miles, and the mail boat makes it twice a week."
+      ],
+      "fact": "distance"
+    },
+    {
+      "id": "single-02-export",
+      "category": "single-fact",
+      "question": "What does Thornbury Reach export?",
+      "expected_answer_substrings": [
+        "oyster lime"
+      ],
+      "chapter_idx": 2,
+      "gold_chapters": [
+        2
+      ],
+      "gold_chapter_titles": [
+        "Thornbury Reach"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Thornbury Reach trades chiefly in oyster lime, which the mainland buys faster than the island can make it."
+      ],
+      "fact": "export"
+    },
+    {
+      "id": "single-03-population",
+      "category": "single-fact",
+      "question": "How many residents does Grennet Point have?",
+      "expected_answer_substrings": [
+        "940"
+      ],
+      "chapter_idx": 3,
+      "gold_chapters": [
+        3
+      ],
+      "gold_chapter_titles": [
+        "Grennet Point"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "There are 940 residents on Grennet Point, and the census taker still calls at every household in person."
+      ],
+      "fact": "population"
+    },
+    {
+      "id": "single-03-dish",
+      "category": "single-fact",
+      "question": "What dish is Grennet Point known for?",
+      "expected_answer_substrings": [
+        "charred lamb with rye"
+      ],
+      "chapter_idx": 3,
+      "gold_chapters": [
+        3
+      ],
+      "gold_chapter_titles": [
+        "Grennet Point"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "No meal on Grennet Point is complete without charred lamb with rye; it is the juniper ash that separates it from every mainland version."
+      ],
+      "fact": "dish"
+    },
+    {
+      "id": "single-03-festival",
+      "category": "single-fact",
+      "question": "What festival does Grennet Point keep, and in which month?",
+      "expected_answer_substrings": [
+        "Longlight Fair",
+        "May"
+      ],
+      "chapter_idx": 3,
+      "gold_chapters": [
+        3
+      ],
+      "gold_chapter_titles": [
+        "Grennet Point"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "the Longlight Fair falls in May, and the boats of Grennet Point stay tied up for the whole of it."
+      ],
+      "fact": "festival"
+    },
+    {
+      "id": "single-03-founder",
+      "category": "single-fact",
+      "question": "Who settled Grennet Point?",
+      "expected_answer_substrings": [
+        "Maren Sarrowbeck"
+      ],
+      "chapter_idx": 3,
+      "gold_chapters": [
+        3
+      ],
+      "gold_chapter_titles": [
+        "Grennet Point"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Islanders still name Maren Sarrowbeck as the founder of Grennet Point, although the title was never formally granted by the assembly."
+      ],
+      "fact": "founder"
+    },
+    {
+      "id": "single-04-landmark",
+      "category": "single-fact",
+      "question": "What is the tallest structure on Sable Ledge, and how tall is it?",
+      "expected_answer_substrings": [
+        "Drowned Chapel",
+        "12 metres"
+      ],
+      "chapter_idx": 4,
+      "gold_chapters": [
+        4
+      ],
+      "gold_chapter_titles": [
+        "Sable Ledge"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "the Drowned Chapel rises 12 metres above the shingle of Sable Ledge and is visible from every anchorage on the eastern shore."
+      ],
+      "fact": "landmark"
+    },
+    {
+      "id": "single-04-distance",
+      "category": "single-fact",
+      "question": "How far is Sable Ledge from Ashgate Quay?",
+      "expected_answer_substrings": [
+        "41 nautical miles"
+      ],
+      "chapter_idx": 4,
+      "gold_chapters": [
+        4
+      ],
+      "gold_chapter_titles": [
+        "Sable Ledge"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Sable Ledge lies 41 nautical miles from Ashgate Quay, a passage of half a day in fair weather."
+      ],
+      "fact": "distance"
+    },
+    {
+      "id": "single-04-export",
+      "category": "single-fact",
+      "question": "What does Sable Ledge export?",
+      "expected_answer_substrings": [
+        "dyed wool"
+      ],
+      "chapter_idx": 4,
+      "gold_chapters": [
+        4
+      ],
+      "gold_chapter_titles": [
+        "Sable Ledge"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The one cargo that leaves Sable Ledge in quantity is dyed wool, shipped out in flat crates."
+      ],
+      "fact": "export"
+    },
+    {
+      "id": "single-04-founded",
+      "category": "single-fact",
+      "question": "In what year was Sable Ledge chartered?",
+      "expected_answer_substrings": [
+        "1742"
+      ],
+      "chapter_idx": 4,
+      "gold_chapters": [
+        4
+      ],
+      "gold_chapter_titles": [
+        "Sable Ledge"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The charter of Sable Ledge was signed in 1742, and the original document still hangs in the meeting hall."
+      ],
+      "fact": "founded"
+    },
+    {
+      "id": "single-05-dish",
+      "category": "single-fact",
+      "question": "What dish is Amberlyn Skerry known for?",
+      "expected_answer_substrings": [
+        "honeyed skerry pie"
+      ],
+      "chapter_idx": 5,
+      "gold_chapters": [
+        5
+      ],
+      "gold_chapter_titles": [
+        "Amberlyn Skerry"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Visitors to Amberlyn Skerry are given honeyed skerry pie, made with wild rosemary curd, before they are asked a single question."
+      ],
+      "fact": "dish"
+    },
+    {
+      "id": "single-05-festival",
+      "category": "single-fact",
+      "question": "What festival does Amberlyn Skerry keep, and in which month?",
+      "expected_answer_substrings": [
+        "Amber Procession",
+        "August"
+      ],
+      "chapter_idx": 5,
+      "gold_chapters": [
+        5
+      ],
+      "gold_chapter_titles": [
+        "Amberlyn Skerry"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Each August the households of Amberlyn Skerry keep the Amber Procession, an occasion from which nobody is excused."
+      ],
+      "fact": "festival"
+    },
+    {
+      "id": "single-05-founder",
+      "category": "single-fact",
+      "question": "Who settled Amberlyn Skerry?",
+      "expected_answer_substrings": [
+        "Jonas Penlow"
+      ],
+      "chapter_idx": 5,
+      "gold_chapters": [
+        5
+      ],
+      "gold_chapter_titles": [
+        "Amberlyn Skerry"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The first permanent household on Amberlyn Skerry belonged to Jonas Penlow, a boatwright who refused three separate offers to return to the mainland."
+      ],
+      "fact": "founder"
+    },
+    {
+      "id": "single-05-population",
+      "category": "single-fact",
+      "question": "How many residents does Amberlyn Skerry have?",
+      "expected_answer_substrings": [
+        "733"
+      ],
+      "chapter_idx": 5,
+      "gold_chapters": [
+        5
+      ],
+      "gold_chapter_titles": [
+        "Amberlyn Skerry"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Amberlyn Skerry has 733 residents, nearly all of them living within a quarter of an hour's walk of the water."
+      ],
+      "fact": "population"
+    },
+    {
+      "id": "single-06-distance",
+      "category": "single-fact",
+      "question": "How far is Quillon Bank from Ashgate Quay?",
+      "expected_answer_substrings": [
+        "5 nautical miles"
+      ],
+      "chapter_idx": 6,
+      "gold_chapters": [
+        6
+      ],
+      "gold_chapter_titles": [
+        "Quillon Bank"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Reckoned from Ashgate Quay, Quillon Bank is 5 nautical miles out, a figure the pilots round up in winter."
+      ],
+      "fact": "distance"
+    },
+    {
+      "id": "single-06-export",
+      "category": "single-fact",
+      "question": "What does Quillon Bank export?",
+      "expected_answer_substrings": [
+        "printed almanacs"
+      ],
+      "chapter_idx": 6,
+      "gold_chapters": [
+        6
+      ],
+      "gold_chapter_titles": [
+        "Quillon Bank"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Nothing leaves Quillon Bank in greater volume than printed almanacs, and nothing has done for a century."
+      ],
+      "fact": "export"
+    },
+    {
+      "id": "single-06-founded",
+      "category": "single-fact",
+      "question": "In what year was Quillon Bank chartered?",
+      "expected_answer_substrings": [
+        "1719"
+      ],
+      "chapter_idx": 6,
+      "gold_chapters": [
+        6
+      ],
+      "gold_chapter_titles": [
+        "Quillon Bank"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "By 1719 the survey office had accepted Quillon Bank as a chartered settlement, with its boundaries marked in cut stone."
+      ],
+      "fact": "founded"
+    },
+    {
+      "id": "single-06-landmark",
+      "category": "single-fact",
+      "question": "What is the tallest structure on Quillon Bank, and how tall is it?",
+      "expected_answer_substrings": [
+        "Quillon Waterworks",
+        "18 metres"
+      ],
+      "chapter_idx": 6,
+      "gold_chapters": [
+        6
+      ],
+      "gold_chapter_titles": [
+        "Quillon Bank"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "the Quillon Waterworks, 18 metres tall, was raised on Quillon Bank by public subscription and has never once been altered."
+      ],
+      "fact": "landmark"
+    },
+    {
+      "id": "single-07-festival",
+      "category": "single-fact",
+      "question": "What festival does Merrowick Holt keep, and in which month?",
+      "expected_answer_substrings": [
+        "Rookery Count",
+        "September"
+      ],
+      "chapter_idx": 7,
+      "gold_chapters": [
+        7
+      ],
+      "gold_chapter_titles": [
+        "Merrowick Holt"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "the Rookery Count is held on Merrowick Holt every September and closes the working year for three days together."
+      ],
+      "fact": "festival"
+    },
+    {
+      "id": "single-07-founder",
+      "category": "single-fact",
+      "question": "Who settled Merrowick Holt?",
+      "expected_answer_substrings": [
+        "Edda Gullick"
+      ],
+      "chapter_idx": 7,
+      "gold_chapters": [
+        7
+      ],
+      "gold_chapter_titles": [
+        "Merrowick Holt"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Merrowick Holt was settled by Edda Gullick, who came ashore with a single crew, a borrowed sloop and a chart drawn on the back of a tide table."
+      ],
+      "fact": "founder"
+    },
+    {
+      "id": "single-07-population",
+      "category": "single-fact",
+      "question": "How many residents does Merrowick Holt have?",
+      "expected_answer_substrings": [
+        "349"
+      ],
+      "chapter_idx": 7,
+      "gold_chapters": [
+        7
+      ],
+      "gold_chapter_titles": [
+        "Merrowick Holt"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The last count recorded 349 residents on Merrowick Holt, a figure that has held steady for two generations."
+      ],
+      "fact": "population"
+    },
+    {
+      "id": "single-07-dish",
+      "category": "single-fact",
+      "question": "What dish is Merrowick Holt known for?",
+      "expected_answer_substrings": [
+        "nettle-wrapped mackerel"
+      ],
+      "chapter_idx": 7,
+      "gold_chapters": [
+        7
+      ],
+      "gold_chapter_titles": [
+        "Merrowick Holt"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The dish that belongs to Merrowick Holt is nettle-wrapped mackerel, which is finished with pine vinegar and served in shallow bowls."
+      ],
+      "fact": "dish"
+    },
+    {
+      "id": "single-08-export",
+      "category": "single-fact",
+      "question": "What does Varden Spit export?",
+      "expected_answer_substrings": [
+        "signal flags"
+      ],
+      "chapter_idx": 8,
+      "gold_chapters": [
+        8
+      ],
+      "gold_chapter_titles": [
+        "Varden Spit"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Varden Spit trades chiefly in signal flags, which the mainland buys faster than the island can make it."
+      ],
+      "fact": "export"
+    },
+    {
+      "id": "single-08-founded",
+      "category": "single-fact",
+      "question": "In what year was Varden Spit chartered?",
+      "expected_answer_substrings": [
+        "1766"
+      ],
+      "chapter_idx": 8,
+      "gold_chapters": [
+        8
+      ],
+      "gold_chapter_titles": [
+        "Varden Spit"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Formal settlement of Varden Spit dates from 1766, the year the assembly at Ashgate Quay entered it in the register."
+      ],
+      "fact": "founded"
+    },
+    {
+      "id": "single-08-landmark",
+      "category": "single-fact",
+      "question": "What is the tallest structure on Varden Spit, and how tall is it?",
+      "expected_answer_substrings": [
+        "Spit Semaphore",
+        "26 metres"
+      ],
+      "chapter_idx": 8,
+      "gold_chapters": [
+        8
+      ],
+      "gold_chapter_titles": [
+        "Varden Spit"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The tallest structure on Varden Spit is the Spit Semaphore, which stands 26 metres from its base to its cap."
+      ],
+      "fact": "landmark"
+    },
+    {
+      "id": "single-08-distance",
+      "category": "single-fact",
+      "question": "How far is Varden Spit from Ashgate Quay?",
+      "expected_answer_substrings": [
+        "12 nautical miles"
+      ],
+      "chapter_idx": 8,
+      "gold_chapters": [
+        8
+      ],
+      "gold_chapter_titles": [
+        "Varden Spit"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The crossing from Ashgate Quay to Varden Spit is 12 nautical miles, and the mail boat makes it twice a week."
+      ],
+      "fact": "distance"
+    },
+    {
+      "id": "single-09-founder",
+      "category": "single-fact",
+      "question": "Who settled Ostrel Bight?",
+      "expected_answer_substrings": [
+        "Sinnet Velmar"
+      ],
+      "chapter_idx": 9,
+      "gold_chapters": [
+        9
+      ],
+      "gold_chapter_titles": [
+        "Ostrel Bight"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Islanders still name Sinnet Velmar as the founder of Ostrel Bight, although the title was never formally granted by the assembly."
+      ],
+      "fact": "founder"
+    },
+    {
+      "id": "single-09-population",
+      "category": "single-fact",
+      "question": "How many residents does Ostrel Bight have?",
+      "expected_answer_substrings": [
+        "214"
+      ],
+      "chapter_idx": 9,
+      "gold_chapters": [
+        9
+      ],
+      "gold_chapter_titles": [
+        "Ostrel Bight"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "There are 214 residents on Ostrel Bight, and the census taker still calls at every household in person."
+      ],
+      "fact": "population"
+    },
+    {
+      "id": "single-09-dish",
+      "category": "single-fact",
+      "question": "What dish is Ostrel Bight known for?",
+      "expected_answer_substrings": [
+        "bight chowder"
+      ],
+      "chapter_idx": 9,
+      "gold_chapters": [
+        9
+      ],
+      "gold_chapter_titles": [
+        "Ostrel Bight"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "No meal on Ostrel Bight is complete without bight chowder; it is the dried lovage that separates it from every mainland version."
+      ],
+      "fact": "dish"
+    },
+    {
+      "id": "single-09-festival",
+      "category": "single-fact",
+      "question": "What festival does Ostrel Bight keep, and in which month?",
+      "expected_answer_substrings": [
+        "Cistern Blessing",
+        "March"
+      ],
+      "chapter_idx": 9,
+      "gold_chapters": [
+        9
+      ],
+      "gold_chapter_titles": [
+        "Ostrel Bight"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "the Cistern Blessing falls in March, and the boats of Ostrel Bight stay tied up for the whole of it."
+      ],
+      "fact": "festival"
+    },
+    {
+      "id": "single-10-founded",
+      "category": "single-fact",
+      "question": "In what year was Falgrove Key chartered?",
+      "expected_answer_substrings": [
+        "1698"
+      ],
+      "chapter_idx": 10,
+      "gold_chapters": [
+        10
+      ],
+      "gold_chapter_titles": [
+        "Falgrove Key"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The charter of Falgrove Key was signed in 1698, and the original document still hangs in the meeting hall."
+      ],
+      "fact": "founded"
+    },
+    {
+      "id": "single-10-landmark",
+      "category": "single-fact",
+      "question": "What is the tallest structure on Falgrove Key, and how tall is it?",
+      "expected_answer_substrings": [
+        "Falgrove Ovens",
+        "38 metres"
+      ],
+      "chapter_idx": 10,
+      "gold_chapters": [
+        10
+      ],
+      "gold_chapter_titles": [
+        "Falgrove Key"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "the Falgrove Ovens rises 38 metres above the shingle of Falgrove Key and is visible from every anchorage on the eastern shore."
+      ],
+      "fact": "landmark"
+    },
+    {
+      "id": "single-10-distance",
+      "category": "single-fact",
+      "question": "How far is Falgrove Key from Ashgate Quay?",
+      "expected_answer_substrings": [
+        "16 nautical miles"
+      ],
+      "chapter_idx": 10,
+      "gold_chapters": [
+        10
+      ],
+      "gold_chapter_titles": [
+        "Falgrove Key"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Falgrove Key lies 16 nautical miles from Ashgate Quay, a passage of half a day in fair weather."
+      ],
+      "fact": "distance"
+    },
+    {
+      "id": "single-10-export",
+      "category": "single-fact",
+      "question": "What does Falgrove Key export?",
+      "expected_answer_substrings": [
+        "fired brick"
+      ],
+      "chapter_idx": 10,
+      "gold_chapters": [
+        10
+      ],
+      "gold_chapter_titles": [
+        "Falgrove Key"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The one cargo that leaves Falgrove Key in quantity is fired brick, shipped out in flat crates."
+      ],
+      "fact": "export"
+    },
+    {
+      "id": "single-11-population",
+      "category": "single-fact",
+      "question": "How many residents does Brindlewick Sound have?",
+      "expected_answer_substrings": [
+        "902"
+      ],
+      "chapter_idx": 11,
+      "gold_chapters": [
+        11
+      ],
+      "gold_chapter_titles": [
+        "Brindlewick Sound"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Brindlewick Sound has 902 residents, nearly all of them living within a quarter of an hour's walk of the water."
+      ],
+      "fact": "population"
+    },
+    {
+      "id": "single-11-dish",
+      "category": "single-fact",
+      "question": "What dish is Brindlewick Sound known for?",
+      "expected_answer_substrings": [
+        "sound-cured herring"
+      ],
+      "chapter_idx": 11,
+      "gold_chapters": [
+        11
+      ],
+      "gold_chapter_titles": [
+        "Brindlewick Sound"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Visitors to Brindlewick Sound are given sound-cured herring, made with black mustard, before they are asked a single question."
+      ],
+      "fact": "dish"
+    },
+    {
+      "id": "single-11-festival",
+      "category": "single-fact",
+      "question": "What festival does Brindlewick Sound keep, and in which month?",
+      "expected_answer_substrings": [
+        "Water Reckoning",
+        "July"
+      ],
+      "chapter_idx": 11,
+      "gold_chapters": [
+        11
+      ],
+      "gold_chapter_titles": [
+        "Brindlewick Sound"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Each July the households of Brindlewick Sound keep the Water Reckoning, an occasion from which nobody is excused."
+      ],
+      "fact": "festival"
+    },
+    {
+      "id": "single-11-founder",
+      "category": "single-fact",
+      "question": "Who settled Brindlewick Sound?",
+      "expected_answer_substrings": [
+        "Wren Ryvold"
+      ],
+      "chapter_idx": 11,
+      "gold_chapters": [
+        11
+      ],
+      "gold_chapter_titles": [
+        "Brindlewick Sound"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The first permanent household on Brindlewick Sound belonged to Wren Ryvold, a boatwright who refused three separate offers to return to the mainland."
+      ],
+      "fact": "founder"
+    },
+    {
+      "id": "single-12-landmark",
+      "category": "single-fact",
+      "question": "What is the tallest structure on Cardrenn Strand, and how tall is it?",
+      "expected_answer_substrings": [
+        "Strand Beacon",
+        "15 metres"
+      ],
+      "chapter_idx": 12,
+      "gold_chapters": [
+        12
+      ],
+      "gold_chapter_titles": [
+        "Cardrenn Strand"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "the Strand Beacon, 15 metres tall, was raised on Cardrenn Strand by public subscription and has never once been altered."
+      ],
+      "fact": "landmark"
+    },
+    {
+      "id": "single-12-distance",
+      "category": "single-fact",
+      "question": "How far is Cardrenn Strand from Ashgate Quay?",
+      "expected_answer_substrings": [
+        "52 nautical miles"
+      ],
+      "chapter_idx": 12,
+      "gold_chapters": [
+        12
+      ],
+      "gold_chapter_titles": [
+        "Cardrenn Strand"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Reckoned from Ashgate Quay, Cardrenn Strand is 52 nautical miles out, a figure the pilots round up in winter."
+      ],
+      "fact": "distance"
+    },
+    {
+      "id": "single-12-export",
+      "category": "single-fact",
+      "question": "What does Cardrenn Strand export?",
+      "expected_answer_substrings": [
+        "sea salt"
+      ],
+      "chapter_idx": 12,
+      "gold_chapters": [
+        12
+      ],
+      "gold_chapter_titles": [
+        "Cardrenn Strand"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Nothing leaves Cardrenn Strand in greater volume than sea salt, and nothing has done for a century."
+      ],
+      "fact": "export"
+    },
+    {
+      "id": "single-12-founded",
+      "category": "single-fact",
+      "question": "In what year was Cardrenn Strand chartered?",
+      "expected_answer_substrings": [
+        "1754"
+      ],
+      "chapter_idx": 12,
+      "gold_chapters": [
+        12
+      ],
+      "gold_chapter_titles": [
+        "Cardrenn Strand"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "By 1754 the survey office had accepted Cardrenn Strand as a chartered settlement, with its boundaries marked in cut stone."
+      ],
+      "fact": "founded"
+    },
+    {
+      "id": "cross-01-older",
+      "category": "cross-chapter",
+      "question": "Which was chartered earlier, Kestrel Cove or Thornbury Reach?",
+      "expected_answer_substrings": [
+        "Kestrel Cove",
+        "1673"
+      ],
+      "chapter_idx": 1,
+      "gold_chapters": [
+        1,
+        2
+      ],
+      "gold_chapter_titles": [
+        "Kestrel Cove",
+        "Thornbury Reach"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The charter of Kestrel Cove was signed in 1673, and the original document still hangs in the meeting hall.",
+        "Formal settlement of Thornbury Reach dates from 1701, the year the assembly at Ashgate Quay entered it in the register."
+      ],
+      "comparison": "older",
+      "derived": false
+    },
+    {
+      "id": "cross-02-charter_gap",
+      "category": "cross-chapter",
+      "question": "How many years separate the charters of Grennet Point and Cardrenn Strand?",
+      "expected_answer_substrings": [
+        "166"
+      ],
+      "chapter_idx": 3,
+      "gold_chapters": [
+        3,
+        12
+      ],
+      "gold_chapter_titles": [
+        "Grennet Point",
+        "Cardrenn Strand"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "By 1588 the survey office had accepted Grennet Point as a chartered settlement, with its boundaries marked in cut stone.",
+        "By 1754 the survey office had accepted Cardrenn Strand as a chartered settlement, with its boundaries marked in cut stone."
+      ],
+      "comparison": "charter_gap",
+      "derived": true
+    },
+    {
+      "id": "cross-03-more_residents",
+      "category": "cross-chapter",
+      "question": "Which has more residents, Quillon Bank or Falgrove Key?",
+      "expected_answer_substrings": [
+        "Quillon Bank",
+        "875"
+      ],
+      "chapter_idx": 6,
+      "gold_chapters": [
+        6,
+        10
+      ],
+      "gold_chapter_titles": [
+        "Quillon Bank",
+        "Falgrove Key"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "There are 875 residents on Quillon Bank, and the census taker still calls at every household in person.",
+        "The last count recorded 632 residents on Falgrove Key, a figure that has held steady for two generations."
+      ],
+      "comparison": "more_residents",
+      "derived": false
+    },
+    {
+      "id": "cross-04-farther",
+      "category": "cross-chapter",
+      "question": "Which is farther from Ashgate Quay, Sable Ledge or Amberlyn Skerry?",
+      "expected_answer_substrings": [
+        "Sable Ledge",
+        "41 nautical miles"
+      ],
+      "chapter_idx": 4,
+      "gold_chapters": [
+        4,
+        5
+      ],
+      "gold_chapter_titles": [
+        "Sable Ledge",
+        "Amberlyn Skerry"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Sable Ledge lies 41 nautical miles from Ashgate Quay, a passage of half a day in fair weather.",
+        "The crossing from Ashgate Quay to Amberlyn Skerry is 33 nautical miles, and the mail boat makes it twice a week."
+      ],
+      "comparison": "farther",
+      "derived": false
+    },
+    {
+      "id": "cross-05-taller",
+      "category": "cross-chapter",
+      "question": "Whose landmark is taller, the one on Merrowick Holt or the one on Brindlewick Sound?",
+      "expected_answer_substrings": [
+        "Sound Aqueduct",
+        "63 metres"
+      ],
+      "chapter_idx": 7,
+      "gold_chapters": [
+        7,
+        11
+      ],
+      "gold_chapter_titles": [
+        "Merrowick Holt",
+        "Brindlewick Sound"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "the Rookery Tower rises 52 metres above the shingle of Merrowick Holt and is visible from every anchorage on the eastern shore.",
+        "The tallest structure on Brindlewick Sound is the Sound Aqueduct, which stands 63 metres from its base to its cap."
+      ],
+      "comparison": "taller",
+      "derived": false
+    },
+    {
+      "id": "cross-06-same_month",
+      "category": "cross-chapter",
+      "question": "In which month do Quillon Bank and Ostrel Bight both hold their festivals?",
+      "expected_answer_substrings": [
+        "March"
+      ],
+      "chapter_idx": 6,
+      "gold_chapters": [
+        6,
+        9
+      ],
+      "gold_chapter_titles": [
+        "Quillon Bank",
+        "Ostrel Bight"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "the Bank Assizes falls in March, and the boats of Quillon Bank stay tied up for the whole of it.",
+        "the Cistern Blessing falls in March, and the boats of Ostrel Bight stay tied up for the whole of it."
+      ],
+      "comparison": "same_month",
+      "derived": false
+    },
+    {
+      "id": "cross-07-older",
+      "category": "cross-chapter",
+      "question": "Which was chartered earlier, Varden Spit or Falgrove Key?",
+      "expected_answer_substrings": [
+        "Falgrove Key",
+        "1698"
+      ],
+      "chapter_idx": 8,
+      "gold_chapters": [
+        8,
+        10
+      ],
+      "gold_chapter_titles": [
+        "Varden Spit",
+        "Falgrove Key"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Formal settlement of Varden Spit dates from 1766, the year the assembly at Ashgate Quay entered it in the register.",
+        "The charter of Falgrove Key was signed in 1698, and the original document still hangs in the meeting hall."
+      ],
+      "comparison": "older",
+      "derived": false
+    },
+    {
+      "id": "cross-08-populations",
+      "category": "cross-chapter",
+      "question": "Compare the populations of Sable Ledge and Cardrenn Strand.",
+      "expected_answer_substrings": [
+        "96",
+        "155"
+      ],
+      "chapter_idx": 4,
+      "gold_chapters": [
+        4,
+        12
+      ],
+      "gold_chapter_titles": [
+        "Sable Ledge",
+        "Cardrenn Strand"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The last count recorded 96 residents on Sable Ledge, a figure that has held steady for two generations.",
+        "There are 155 residents on Cardrenn Strand, and the census taker still calls at every household in person."
+      ],
+      "comparison": "populations",
+      "derived": false
+    },
+    {
+      "id": "summary-01",
+      "category": "chapter-summary",
+      "question": "What is Chapter 1 about?",
+      "expected_answer_substrings": [
+        "Kestrel Cove"
+      ],
+      "chapter_idx": 1,
+      "gold_chapters": [
+        1
+      ],
+      "gold_chapter_titles": [
+        "Kestrel Cove"
+      ],
+      "expect_refusal": false,
+      "evidence": [],
+      "theme": "harbour defence and lantern keeping"
+    },
+    {
+      "id": "summary-02",
+      "category": "chapter-summary",
+      "question": "What does the chapter on Thornbury Reach cover?",
+      "expected_answer_substrings": [
+        "Thornbury Reach"
+      ],
+      "chapter_idx": 2,
+      "gold_chapters": [
+        2
+      ],
+      "gold_chapter_titles": [
+        "Thornbury Reach"
+      ],
+      "expect_refusal": false,
+      "evidence": [],
+      "theme": "the crossing, the fog and the oyster trade"
+    },
+    {
+      "id": "summary-03",
+      "category": "chapter-summary",
+      "question": "What is Chapter 3 about?",
+      "expected_answer_substrings": [
+        "Grennet Point"
+      ],
+      "chapter_idx": 3,
+      "gold_chapters": [
+        3
+      ],
+      "gold_chapter_titles": [
+        "Grennet Point"
+      ],
+      "expect_refusal": false,
+      "evidence": [],
+      "theme": "observation, timekeeping and the basalt quarries"
+    },
+    {
+      "id": "summary-04",
+      "category": "chapter-summary",
+      "question": "What does the chapter on Sable Ledge cover?",
+      "expected_answer_substrings": [
+        "Sable Ledge"
+      ],
+      "chapter_idx": 4,
+      "gold_chapters": [
+        4
+      ],
+      "gold_chapter_titles": [
+        "Sable Ledge"
+      ],
+      "expect_refusal": false,
+      "evidence": [],
+      "theme": "tides, wrecks and life without a harbour"
+    },
+    {
+      "id": "summary-05",
+      "category": "chapter-summary",
+      "question": "What is Chapter 5 about?",
+      "expected_answer_substrings": [
+        "Amberlyn Skerry"
+      ],
+      "chapter_idx": 5,
+      "gold_chapters": [
+        5
+      ],
+      "gold_chapter_titles": [
+        "Amberlyn Skerry"
+      ],
+      "expect_refusal": false,
+      "evidence": [],
+      "theme": "dunes, amber resin and the refusal of wheels"
+    },
+    {
+      "id": "summary-06",
+      "category": "chapter-summary",
+      "question": "What does the chapter on Quillon Bank cover?",
+      "expected_answer_substrings": [
+        "Quillon Bank"
+      ],
+      "chapter_idx": 6,
+      "gold_chapters": [
+        6
+      ],
+      "gold_chapter_titles": [
+        "Quillon Bank"
+      ],
+      "expect_refusal": false,
+      "evidence": [],
+      "theme": "fresh water, printing and the two calendars"
+    },
+    {
+      "id": "summary-07",
+      "category": "chapter-summary",
+      "question": "What is Chapter 7 about?",
+      "expected_answer_substrings": [
+        "Merrowick Holt"
+      ],
+      "chapter_idx": 7,
+      "gold_chapters": [
+        7
+      ],
+      "gold_chapter_titles": [
+        "Merrowick Holt"
+      ],
+      "expect_refusal": false,
+      "evidence": [],
+      "theme": "birds, woodland and the rookery count"
+    },
+    {
+      "id": "summary-08",
+      "category": "chapter-summary",
+      "question": "What does the chapter on Varden Spit cover?",
+      "expected_answer_substrings": [
+        "Varden Spit"
+      ],
+      "chapter_idx": 8,
+      "gold_chapters": [
+        8
+      ],
+      "gold_chapter_titles": [
+        "Varden Spit"
+      ],
+      "expect_refusal": false,
+      "evidence": [],
+      "theme": "signals, gravel and the semaphore trials"
+    },
+    {
+      "id": "summary-09",
+      "category": "chapter-summary",
+      "question": "What is Chapter 9 about?",
+      "expected_answer_substrings": [
+        "Ostrel Bight"
+      ],
+      "chapter_idx": 9,
+      "gold_chapters": [
+        9
+      ],
+      "gold_chapter_titles": [
+        "Ostrel Bight"
+      ],
+      "expect_refusal": false,
+      "evidence": [],
+      "theme": "fresh water, frost and the cistern"
+    },
+    {
+      "id": "summary-10",
+      "category": "chapter-summary",
+      "question": "What does the chapter on Falgrove Key cover?",
+      "expected_answer_substrings": [
+        "Falgrove Key"
+      ],
+      "chapter_idx": 10,
+      "gold_chapters": [
+        10
+      ],
+      "gold_chapter_titles": [
+        "Falgrove Key"
+      ],
+      "expect_refusal": false,
+      "evidence": [],
+      "theme": "clay, fire and the ovens that never cool"
+    },
+    {
+      "id": "summary-11",
+      "category": "chapter-summary",
+      "question": "What is Chapter 11 about?",
+      "expected_answer_substrings": [
+        "Brindlewick Sound"
+      ],
+      "chapter_idx": 11,
+      "gold_chapters": [
+        11
+      ],
+      "gold_chapter_titles": [
+        "Brindlewick Sound"
+      ],
+      "expect_refusal": false,
+      "evidence": [],
+      "theme": "the aqueduct, the deep sound and reed matting"
+    },
+    {
+      "id": "summary-12",
+      "category": "chapter-summary",
+      "question": "What does the chapter on Cardrenn Strand cover?",
+      "expected_answer_substrings": [
+        "Cardrenn Strand"
+      ],
+      "chapter_idx": 12,
+      "gold_chapters": [
+        12
+      ],
+      "gold_chapter_titles": [
+        "Cardrenn Strand"
+      ],
+      "expect_refusal": false,
+      "evidence": [],
+      "theme": "sand, sea salt and the hand-lit beacon"
+    },
+    {
+      "id": "absent-01",
+      "category": "not-in-book",
+      "question": "How many residents live on Tessaly Point?",
+      "expected_answer_substrings": [],
+      "chapter_idx": 0,
+      "gold_chapters": [],
+      "gold_chapter_titles": [],
+      "expect_refusal": true,
+      "evidence": []
+    },
+    {
+      "id": "absent-02",
+      "category": "not-in-book",
+      "question": "Which island in the archipelago has an airfield?",
+      "expected_answer_substrings": [],
+      "chapter_idx": 0,
+      "gold_chapters": [],
+      "gold_chapter_titles": [],
+      "expect_refusal": true,
+      "evidence": []
+    },
+    {
+      "id": "absent-03",
+      "category": "not-in-book",
+      "question": "What does the book say about repairing the submarine telegraph cable?",
+      "expected_answer_substrings": [],
+      "chapter_idx": 0,
+      "gold_chapters": [],
+      "gold_chapter_titles": [],
+      "expect_refusal": true,
+      "evidence": []
+    },
+    {
+      "id": "absent-04",
+      "category": "not-in-book",
+      "question": "What does a return ticket on the mail boat cost?",
+      "expected_answer_substrings": [],
+      "chapter_idx": 0,
+      "gold_chapters": [],
+      "gold_chapter_titles": [],
+      "expect_refusal": true,
+      "evidence": []
+    },
+    {
+      "id": "absent-05",
+      "category": "not-in-book",
+      "question": "Who is the current governor of the Meridian Archipelago?",
+      "expected_answer_substrings": [],
+      "chapter_idx": 0,
+      "gold_chapters": [],
+      "gold_chapter_titles": [],
+      "expect_refusal": true,
+      "evidence": []
+    },
+    {
+      "id": "absent-06",
+      "category": "not-in-book",
+      "question": "What is the recipe for Halvard's honey stout?",
+      "expected_answer_substrings": [],
+      "chapter_idx": 0,
+      "gold_chapters": [],
+      "gold_chapter_titles": [],
+      "expect_refusal": true,
+      "evidence": []
+    },
+    {
+      "id": "absent-07",
+      "category": "not-in-book",
+      "question": "Which chapter describes the volcanic eruption of 1911?",
+      "expected_answer_substrings": [],
+      "chapter_idx": 0,
+      "gold_chapters": [],
+      "gold_chapter_titles": [],
+      "expect_refusal": true,
+      "evidence": []
+    },
+    {
+      "id": "absent-08",
+      "category": "not-in-book",
+      "question": "What are the archipelago's rules on copper mining?",
+      "expected_answer_substrings": [],
+      "chapter_idx": 0,
+      "gold_chapters": [],
+      "gold_chapter_titles": [],
+      "expect_refusal": true,
+      "evidence": []
+    },
+    {
+      "id": "asr-01-population",
+      "category": "asr-corrupted",
+      "question": "How many residents does Castrel Cove have?",
+      "expected_answer_substrings": [
+        "412"
+      ],
+      "chapter_idx": 1,
+      "gold_chapters": [
+        1
+      ],
+      "gold_chapter_titles": [
+        "Kestrel Cove"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The last count recorded 412 residents on Kestrel Cove, a figure that has held steady for two generations."
+      ],
+      "fact": "population",
+      "asr": {
+        "spoken": "How many residents does Kestrel Cove have?",
+        "term": "Kestrel",
+        "heard_term": "Castrel"
+      }
+    },
+    {
+      "id": "asr-02-distance",
+      "category": "asr-corrupted",
+      "question": "How far is Thornberry Reach from Ashgate Quay?",
+      "expected_answer_substrings": [
+        "27 nautical miles"
+      ],
+      "chapter_idx": 2,
+      "gold_chapters": [
+        2
+      ],
+      "gold_chapter_titles": [
+        "Thornbury Reach"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The crossing from Ashgate Quay to Thornbury Reach is 27 nautical miles, and the mail boat makes it twice a week."
+      ],
+      "fact": "distance",
+      "asr": {
+        "spoken": "How far is Thornbury Reach from Ashgate Quay?",
+        "term": "Thornbury",
+        "heard_term": "Thornberry"
+      }
+    },
+    {
+      "id": "asr-03-founder",
+      "category": "asr-corrupted",
+      "question": "Who settled Grennit Point?",
+      "expected_answer_substrings": [
+        "Maren Sarrowbeck"
+      ],
+      "chapter_idx": 3,
+      "gold_chapters": [
+        3
+      ],
+      "gold_chapter_titles": [
+        "Grennet Point"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Islanders still name Maren Sarrowbeck as the founder of Grennet Point, although the title was never formally granted by the assembly."
+      ],
+      "fact": "founder",
+      "asr": {
+        "spoken": "Who settled Grennet Point?",
+        "term": "Grennet",
+        "heard_term": "Grennit"
+      }
+    },
+    {
+      "id": "asr-04-landmark",
+      "category": "asr-corrupted",
+      "question": "What is the tallest structure on Sabel Ledge, and how tall is it?",
+      "expected_answer_substrings": [
+        "Drowned Chapel",
+        "12 metres"
+      ],
+      "chapter_idx": 4,
+      "gold_chapters": [
+        4
+      ],
+      "gold_chapter_titles": [
+        "Sable Ledge"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "the Drowned Chapel rises 12 metres above the shingle of Sable Ledge and is visible from every anchorage on the eastern shore."
+      ],
+      "fact": "landmark",
+      "asr": {
+        "spoken": "What is the tallest structure on Sable Ledge, and how tall is it?",
+        "term": "Sable",
+        "heard_term": "Sabel"
+      }
+    },
+    {
+      "id": "asr-05-festival",
+      "category": "asr-corrupted",
+      "question": "What festival does Amberlin Skerry keep, and in which month?",
+      "expected_answer_substrings": [
+        "Amber Procession",
+        "August"
+      ],
+      "chapter_idx": 5,
+      "gold_chapters": [
+        5
+      ],
+      "gold_chapter_titles": [
+        "Amberlyn Skerry"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Each August the households of Amberlyn Skerry keep the Amber Procession, an occasion from which nobody is excused."
+      ],
+      "fact": "festival",
+      "asr": {
+        "spoken": "What festival does Amberlyn Skerry keep, and in which month?",
+        "term": "Amberlyn",
+        "heard_term": "Amberlin"
+      }
+    },
+    {
+      "id": "asr-06-founded",
+      "category": "asr-corrupted",
+      "question": "In what year was Killon Bank chartered?",
+      "expected_answer_substrings": [
+        "1719"
+      ],
+      "chapter_idx": 6,
+      "gold_chapters": [
+        6
+      ],
+      "gold_chapter_titles": [
+        "Quillon Bank"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "By 1719 the survey office had accepted Quillon Bank as a chartered settlement, with its boundaries marked in cut stone."
+      ],
+      "fact": "founded",
+      "asr": {
+        "spoken": "In what year was Quillon Bank chartered?",
+        "term": "Quillon",
+        "heard_term": "Killon"
+      }
+    },
+    {
+      "id": "asr-07-dish",
+      "category": "asr-corrupted",
+      "question": "What dish is Marrowick Holt known for?",
+      "expected_answer_substrings": [
+        "nettle-wrapped mackerel"
+      ],
+      "chapter_idx": 7,
+      "gold_chapters": [
+        7
+      ],
+      "gold_chapter_titles": [
+        "Merrowick Holt"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The dish that belongs to Merrowick Holt is nettle-wrapped mackerel, which is finished with pine vinegar and served in shallow bowls."
+      ],
+      "fact": "dish",
+      "asr": {
+        "spoken": "What dish is Merrowick Holt known for?",
+        "term": "Merrowick",
+        "heard_term": "Marrowick"
+      }
+    },
+    {
+      "id": "asr-08-export",
+      "category": "asr-corrupted",
+      "question": "What does Vardin Spit export?",
+      "expected_answer_substrings": [
+        "signal flags"
+      ],
+      "chapter_idx": 8,
+      "gold_chapters": [
+        8
+      ],
+      "gold_chapter_titles": [
+        "Varden Spit"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Varden Spit trades chiefly in signal flags, which the mainland buys faster than the island can make it."
+      ],
+      "fact": "export",
+      "asr": {
+        "spoken": "What does Varden Spit export?",
+        "term": "Varden",
+        "heard_term": "Vardin"
+      }
+    },
+    {
+      "id": "asr-09-population",
+      "category": "asr-corrupted",
+      "question": "How many residents does Ostrell Bight have?",
+      "expected_answer_substrings": [
+        "214"
+      ],
+      "chapter_idx": 9,
+      "gold_chapters": [
+        9
+      ],
+      "gold_chapter_titles": [
+        "Ostrel Bight"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "There are 214 residents on Ostrel Bight, and the census taker still calls at every household in person."
+      ],
+      "fact": "population",
+      "asr": {
+        "spoken": "How many residents does Ostrel Bight have?",
+        "term": "Ostrel",
+        "heard_term": "Ostrell"
+      }
+    },
+    {
+      "id": "asr-10-distance",
+      "category": "asr-corrupted",
+      "question": "How far is Phalgrove Key from Ashgate Quay?",
+      "expected_answer_substrings": [
+        "16 nautical miles"
+      ],
+      "chapter_idx": 10,
+      "gold_chapters": [
+        10
+      ],
+      "gold_chapter_titles": [
+        "Falgrove Key"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "Falgrove Key lies 16 nautical miles from Ashgate Quay, a passage of half a day in fair weather."
+      ],
+      "fact": "distance",
+      "asr": {
+        "spoken": "How far is Falgrove Key from Ashgate Quay?",
+        "term": "Falgrove",
+        "heard_term": "Phalgrove"
+      }
+    },
+    {
+      "id": "asr-11-founder",
+      "category": "asr-corrupted",
+      "question": "Who settled Brindlwick Sound?",
+      "expected_answer_substrings": [
+        "Wren Ryvold"
+      ],
+      "chapter_idx": 11,
+      "gold_chapters": [
+        11
+      ],
+      "gold_chapter_titles": [
+        "Brindlewick Sound"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "The first permanent household on Brindlewick Sound belonged to Wren Ryvold, a boatwright who refused three separate offers to return to the mainland."
+      ],
+      "fact": "founder",
+      "asr": {
+        "spoken": "Who settled Brindlewick Sound?",
+        "term": "Brindlewick",
+        "heard_term": "Brindlwick"
+      }
+    },
+    {
+      "id": "asr-12-landmark",
+      "category": "asr-corrupted",
+      "question": "What is the tallest structure on Kardrenn Strand, and how tall is it?",
+      "expected_answer_substrings": [
+        "Strand Beacon",
+        "15 metres"
+      ],
+      "chapter_idx": 12,
+      "gold_chapters": [
+        12
+      ],
+      "gold_chapter_titles": [
+        "Cardrenn Strand"
+      ],
+      "expect_refusal": false,
+      "evidence": [
+        "the Strand Beacon, 15 metres tall, was raised on Cardrenn Strand by public subscription and has never once been altered."
+      ],
+      "fact": "landmark",
+      "asr": {
+        "spoken": "What is the tallest structure on Cardrenn Strand, and how tall is it?",
+        "term": "Cardrenn",
+        "heard_term": "Kardrenn"
+      }
+    }
+  ]
+}

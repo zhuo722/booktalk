@@ -1,0 +1,182 @@
+/* ------------------------------------------------------------------ */
+/*  BookTalk design tokens — "Studio Light" (v3)                        */
+/*                                                                      */
+/*  One light world. A cool canvas carrying two static pastel washes,    */
+/*  white cards with large radii and soft shadows, and frosted-glass     */
+/*  surfaces wherever chrome overlays content (header, rail, composer,   */
+/*  toasts, sheet). ONE decisive theme colour: blue. Coral is semantic   */
+/*  and recording-only. No dark surface exists anywhere in this system.  */
+/*                                                                      */
+/*  Every pairing is verified against WCAG: body/placeholder ≥4.5:1,     */
+/*  large and graphic ≥3:1. Ratios noted inline; glass is measured both  */
+/*  blurred (0.72 over the washed canvas) and with the @supports         */
+/*  fallback (solid 0.92 white).                                         */
+/* ------------------------------------------------------------------ */
+
+:root {
+  /* --- Canvas ------------------------------------------------------ */
+  --canvas: #e9ebf2; /* page ground — ink 14.6:1, ink-soft 4.9:1        */
+
+  /* Two static ambient washes on <body>, so the glass surfaces frost   */
+  /* over colour instead of over flat gray. The brief's ~8% warm /      */
+  /* ~10% cool is the wash's strength across the canvas as a whole;     */
+  /* these are radial and fall off to nothing, so the core sits at      */
+  /* about double for the mean to land there — and at 8% in the core    */
+  /* the wash disappears entirely under 0.72 glass, which is the one    */
+  /* job the glows have. Measured at the cores: --ink-soft on canvas    */
+  /* 4.78:1 warm, 4.67:1 cool (floor 4.5). The cores sit outside the    */
+  /* viewport and the two falloffs never meet. Static — operate.md      */
+  /* bans ambient motion.                                               */
+  --canvas-glow-a: radial-gradient(
+    46rem 36rem at 2% -8%,
+    rgba(255, 217, 199, 0.16) 0%,
+    rgba(255, 217, 199, 0.15) 32%,
+    rgba(255, 217, 199, 0) 72%
+  );
+  --canvas-glow-b: radial-gradient(
+    52rem 42rem at 100% 106%,
+    rgba(191, 216, 255, 0.2) 0%,
+    rgba(191, 216, 255, 0.19) 32%,
+    rgba(191, 216, 255, 0) 74%
+  );
+
+  --card: #ffffff; /* every content surface                             */
+  --ink: #171a20; /* primary text — 17.4:1 card, 14.6:1 canvas          */
+  --ink-soft: #5f6672; /* secondary — 5.8:1 card, 4.9:1 canvas,         */
+  /* 4.7:1 at the coolest point of the ambient wash                      */
+  --line: #e2e5eb; /* hairlines on white                                */
+  --line-strong: #ccd2dc; /* non-structural borders and inert tracks    */
+  --line-glass: rgba(226, 229, 235, 0.6); /* the header's bottom hair   */
+
+  /* --- Glass (overlay surfaces only, never inline decoration) ------- */
+  --glass: rgba(255, 255, 255, 0.72); /* ink 16.4:1, ink-soft 5.5:1 at  */
+  /* the worst point of the wash it sits over                            */
+  --glass-solid: rgba(255, 255, 255, 0.92); /* @supports fallback —     */
+  /* ink 17.2:1, ink-soft 5.7:1, so text holds with the blur off        */
+  --glass-blur: saturate(1.4) blur(18px);
+  --glass-line: rgba(255, 255, 255, 0.55); /* 1px lit top edge          */
+
+  /* --- The theme colour, used decisively --------------------------- */
+  --blue: #3d63f2; /* fills, rings, bars, waveform — white on it 4.9:1  */
+  --blue-deep: #2c4bd8; /* the family's text weight — 6.8:1 card,       */
+  /* 5.7:1 canvas, 5.5:1 on --blue-soft                                 */
+  --blue-soft: #dce7ff; /* selection wash and pills — ink 14.0:1        */
+
+  /* --- Live (recording only; never decorative) --------------------- */
+  --live: #f0604d; /* coral graphics: rings, input waveform             */
+  --live-strong: #d93c23; /* filled recording control — white 4.5:1     */
+  --live-ink: #b8301e; /* coral text on white — 6.0:1                   */
+
+  /* --- Pastel gradient families ------------------------------------ */
+  /* Stat tiles use these two directly; book covers hash a hue inside   */
+  /* the same warm/cool bands. --ink is ≥9.6:1 on every stop of every   */
+  /* member the hash can produce (white would be ≤2.6:1), so the tile   */
+  /* letter and the tile numerals are ink at every hue.                 */
+  --grad-warm: linear-gradient(135deg, #ffd9c7, #f6b9d2);
+  --grad-cool: linear-gradient(135deg, #bfd8ff, #a3e7db);
+
+  /* --- Feedback ---------------------------------------------------- */
+  --err: #b3402f; /* 4.8:1 on --err-bg, 5.7:1 on card                   */
+  --err-bg: #fbe9e4;
+
+  /* --- Type -------------------------------------------------------- */
+  --font-serif: "Literata Variable", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Instrument Sans Variable", "Helvetica Neue", "Segoe UI",
+    sans-serif;
+  --font-mono: "Spline Sans Mono Variable", ui-monospace, "SF Mono", Menlo,
+    monospace;
+
+  /* Fixed rem scale — 12 / 13 / 15 / 17 / 20 / 26 / 34 / 44 */
+  --text-12: 0.75rem;
+  --text-13: 0.8125rem;
+  --text-15: 0.9375rem;
+  --text-17: 1.0625rem;
+  --text-20: 1.25rem;
+  --text-26: 1.625rem;
+  --text-34: 2.125rem;
+  --text-44: 2.75rem;
+
+  --leading-snug: 1.32;
+  --leading-ui: 1.45;
+  --leading-prose: 1.7;
+
+  --track-caps: 0.09em; /* caps-mono micro labels */
+  --track-display: -0.022em; /* display lines (floor is -0.04em)      */
+
+  /* --- Space (4px base) -------------------------------------------- */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.25rem;
+  --sp-6: 1.5rem;
+  --sp-7: 1.75rem;
+  --sp-8: 2rem;
+  --sp-10: 2.5rem;
+
+  /* The moat every floating surface keeps from the canvas edge. */
+  --float: 12px;
+  /* The height both control rows stand at — the chapter strip under the book
+     and the question box across from it read as one line of controls. */
+  --control-h: 3.25rem;
+
+  /* --- Shape ------------------------------------------------------- */
+  --radius-card: 20px;
+  --radius-inner: 12px;
+  --radius-cover: 8px; /* the book cover tile */
+  --radius-pill: 999px;
+
+  /* --- Depth — offset + blur, one light source (above) ------------- */
+  --shadow-sm: 0 2px 6px rgba(23, 26, 32, 0.06);
+  --shadow-card: 0 8px 28px rgba(23, 26, 32, 0.07);
+  --shadow-lift: 0 14px 36px rgba(23, 26, 32, 0.12);
+
+  /* The shelf's volumes sit ON the ground rather than floating over it, so
+     they take a contact shadow under the cast one. Both are drawn inside the
+     tilted plane, which is the table — same light source, from above. */
+  --shadow-ground:
+    0 3px 7px rgba(23, 26, 32, 0.1), 0 18px 30px rgba(23, 26, 32, 0.14);
+  --shadow-ground-lift:
+    0 5px 10px rgba(23, 26, 32, 0.12), 0 28px 46px rgba(23, 26, 32, 0.2);
+
+  /* --- The shelf (landing screen) ---------------------------------- */
+  /* One book per row, no gaps: the stack reads as a pile seen from just
+     above. Every value below is overridden once, at 900px, where the tick
+     rail leaves and the pose flattens so the type stays legible. */
+  --shelf-pad: 64px; /* the header's side margin        */
+  --shelf-quiet: 14.25rem; /* empty ground under the header   */
+  --shelf-row: 168px; /* row pitch                        */
+  /* The volume fills ~2/3 of its row, as on the reference shelf: a tight
+     procession of thick objects, not spaced-out slabs. Projected height is
+     h × cos(tilt), so 148px reads as ~103px of book against 65px of ground. */
+  --shelf-volume-w: 720px;
+  --shelf-volume-h: 148px;
+  --shelf-lean: 0deg; /* the book lies square; only its pages step away */
+  --page-cream: #fbf8f1; /* cut paper, never a tint of the cloth */
+  --shelf-tilt: 46deg;
+  --shelf-rail-w: 34px;
+
+  /* --- Inert position marks ---------------------------------------- */
+  /* A mark that only reports where you are, but is still a control: the
+     scrollbar thumb and the shelf's tick rail. Both clear 3:1 rather than
+     settling for the platform's ~1.5:1 default — 3.1:1 on canvas, 3.6:1 on
+     card. --line-strong (1.28:1 on canvas) is for genuinely inert tracks. */
+  --mark-inert: #7c8798;
+
+  /* --- Browser surfaces -------------------------------------------- */
+  /* The thumb reads as a 4px slate stroke because of the 3px transparent
+     border below. */
+  --scroll-thumb: var(--mark-inert);
+  --scroll-thumb-hover: #5f6a7c;
+
+  /* --- Motion — state-conveying, exponential ease-out -------------- */
+  --t-fast: 120ms;
+  --t: 180ms;
+  --t-slow: 240ms;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* --- Layers ------------------------------------------------------ */
+  --z-chrome: 20; /* sticky header and the composer dock */
+  --z-tooltip: 45;
+  --z-toast: 50;
+}

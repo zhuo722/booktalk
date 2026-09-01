@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "booktalk"
+version = "0.1.0"
+description = "Voice-based question answering over an uploaded PDF book"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = [
+    "fastapi==0.115.12",
+    "uvicorn[standard]==0.33.0",
+    "python-multipart==0.0.20",
+    "pydantic==2.10.6",
+    "openai==1.68.2",
+    "pymupdf==1.26.5",
+    "pymupdf4llm==0.0.27",
+    "semchunk==3.2.5",
+    "numpy==1.26.4",
+    "rank-bm25==0.2.2",
+    "jieba==0.42.1",
+    "tiktoken==0.7.0",
+    "python-dotenv==1.0.1",
+    # Cross-encoder rerank (SPEC §14.6). onnxruntime is pinned because 1.19.2
+    # is the last release with a cp39 macOS wheel; flashrank is pure python.
+    "flashrank==0.2.10",
+    "onnxruntime==1.19.2",
+    # Double Metaphone for ASR entity repair (SPEC §14.9). Pure python, BSD,
+    # zero dependencies; PyPI ships an sdist that builds a py3-none-any wheel.
+    "Metaphone==0.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.3.5",
+    "httpx==0.28.1",
+    "reportlab==4.2.5",
+]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    # LibreSSL on stock macOS python3; irrelevant offline and unfixable here.
+    "ignore:.*OpenSSL.*:Warning",
+]
