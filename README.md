@@ -1,5 +1,7 @@
 # BookTalk
 
+**Live demo: [https://booktalk-a31g.onrender.com](https://booktalk-a31g.onrender.com)** — five public-domain books preloaded; pick one and ask. (Free tier: the first visit after a quiet spell takes about a minute to wake up.)
+
 Upload a PDF book, ask it a question out loud, and hear the book answer — grounded in
 its own pages, with the passages it used shown on screen. The interesting part is not
 that it works but *how fast* and *how honestly* it works: the answer starts being spoken
