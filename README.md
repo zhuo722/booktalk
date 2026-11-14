@@ -1,5 +1,7 @@
 # BookTalk
 
+**Live demo: [https://fanzhuo722-booktalk.hf.space](https://fanzhuo722-booktalk.hf.space)** — five public-domain books preloaded; hold the mic and ask.
+
 Upload a PDF book, ask it a question out loud, and hear the book answer — grounded in
 its own pages, with the passages it used shown on screen. The interesting part is not
 that it works but *how fast* and *how honestly* it works: the answer starts being spoken
