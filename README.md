@@ -1,7 +1,5 @@
 # BookTalk
 
-**Live demo: [https://fanzhuo722-booktalk.hf.space](https://fanzhuo722-booktalk.hf.space)** — five public-domain books preloaded; hold the mic and ask.
-
 Upload a PDF book, ask it a question out loud, and hear the book answer — grounded in
 its own pages, with the passages it used shown on screen. The interesting part is not
 that it works but *how fast* and *how honestly* it works: the answer starts being spoken
@@ -123,8 +121,10 @@ uploads, questions and voice input, a 20 MB upload limit, and the seeded books c
 deleted (`backend/app/demo.py`). `DEEPSEEK_API_KEY` is optional — when set, every chat
 completion (answers, query rewrite, ingest enrichment) goes to `deepseek-chat`, while
 embeddings, ASR and TTS stay on OpenAI, which DeepSeek does not offer. The hosted demo
-runs as a Docker Space on Hugging Face (`deploy/hf/README.md` is its Space card); the
-two keys are Space secrets.
+runs on Render's free tier from `render.yaml` (a Blueprint: one Docker web service, the
+two keys entered as secrets); peak memory measured under a 512 MB cap was ~340 MB with
+three books loaded and a fourth ingesting. Free instances sleep after 15 idle minutes,
+so the first visit after a while takes about a minute to wake up.
 
 ---
 

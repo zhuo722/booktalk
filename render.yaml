@@ -1,0 +1,14 @@
+# Render Blueprint: one free Docker web service built from the root Dockerfile.
+# Render → New → Blueprint → pick this repo; it asks for the two keys below.
+services:
+  - type: web
+    name: booktalk
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: DEEPSEEK_API_KEY
+        sync: false

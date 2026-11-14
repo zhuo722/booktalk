@@ -1,5 +1,5 @@
 # BookTalk — one image: the FastAPI backend serving the built React frontend.
-# Built for Hugging Face Spaces (port 7860, runs as uid 1000) but works anywhere:
+# Port 7860 by default (a host-provided $PORT wins), runs as uid 1000:
 #   docker build -t booktalk . && docker run -p 7860:7860 --env-file backend/.env booktalk
 
 FROM node:20-slim AS frontend

@@ -2,8 +2,6 @@
 
 [English](README.md) · **中文**
 
-**在线演示：[https://fanzhuo722-booktalk.hf.space](https://fanzhuo722-booktalk.hf.space)** —— 预置五本公版书，按住麦克风直接提问。
-
 上传一本 PDF 书，开口问它一个问题，然后听这本书回答 —— 答案基于书自己的页面，用到的段落
 同时显示在屏幕上。有意思的地方不是它能跑通，而是它跑得*多快*、*多诚实*：语言模型还在写
 答案的时候，语音就已经开始念了；喂给它的检索是手写的混合检索流水线（结构感知的 chunk、
@@ -115,8 +113,10 @@ docker run -p 7860:7860 -e OPENAI_API_KEY=... -e DEEPSEEK_API_KEY=... booktalk
 镜像默认 `BOOKTALK_DEMO=1`：上传、提问、语音输入都有按 IP 的每小时限额和全站每日上限，上传
 上限 20 MB，示例书不能被删除（`backend/app/demo.py`）。`DEEPSEEK_API_KEY` 可选 —— 设置后所
 有对话补全（回答、查询改写、入库增强）都走 `deepseek-chat`，向量、语音识别和语音合成仍走
-OpenAI（DeepSeek 不提供这些）。线上演示跑在 Hugging Face 的 Docker Space 上
-（`deploy/hf/README.md` 是它的 Space 卡片），两个 key 配置为 Space secrets。
+OpenAI（DeepSeek 不提供这些）。线上演示用 `render.yaml`（Render Blueprint：一个
+Docker web 服务，两个 key 作为 secret 填写）跑在 Render 免费档上；在 512 MB 内存限制下实测，加
+载三本书同时入库第四本，峰值约 340 MB。免费实例 15 分钟无访问会休眠，隔一段时间后的首次访问
+需要约一分钟唤醒。
 
 ---
 
