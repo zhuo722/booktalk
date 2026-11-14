@@ -99,6 +99,25 @@ cd backend
 
 ---
 
+## 部署公开演示站
+
+根目录的 `Dockerfile` 打成一个镜像：FastAPI 后端在 7860 端口同时托管构建好的前端，启动时自带
+五本已建好索引的示例书（`deploy/seed/`，用 `python3 scripts/make_demo_seed.py` 重新生成），
+所以新容器无需花钱入库就能直接回答问题。
+
+```bash
+docker build -t booktalk .
+docker run -p 7860:7860 -e OPENAI_API_KEY=... -e DEEPSEEK_API_KEY=... booktalk
+```
+
+镜像默认 `BOOKTALK_DEMO=1`：上传、提问、语音输入都有按 IP 的每小时限额和全站每日上限，上传
+上限 20 MB，示例书不能被删除（`backend/app/demo.py`）。`DEEPSEEK_API_KEY` 可选 —— 设置后所
+有对话补全（回答、查询改写、入库增强）都走 `deepseek-chat`，向量、语音识别和语音合成仍走
+OpenAI（DeepSeek 不提供这些）。线上演示跑在 Hugging Face 的 Docker Space 上
+（`deploy/hf/README.md` 是它的 Space 卡片），两个 key 配置为 Space secrets。
+
+---
+
 ## 检索真的有效吗？
 
 `backend/eval/` 会生成一本 25 页、12 章的测试用书，内容是一个不存在的群岛；再用写这本书

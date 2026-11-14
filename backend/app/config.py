@@ -16,6 +16,8 @@ from dotenv import load_dotenv
 
 BACKEND_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_CORS_ORIGINS = ("http://localhost:5173", "http://127.0.0.1:5173")
+DEEPSEEK_BASE_URL = "https://api.deepseek.com"
+DEEPSEEK_MODEL = "deepseek-chat"
 
 
 def _env_str(name: str, default: str = "") -> str:
@@ -70,6 +72,11 @@ class Settings:
 
     openai_api_key: str = ""
     openai_base_url: Optional[str] = None
+    # Optional separate provider for chat completions only (answer, rewrite,
+    # ingest enrichment) — e.g. DeepSeek, which has no embeddings, ASR or TTS.
+    # Empty means chat goes to OpenAI like everything else.
+    chat_api_key: str = ""
+    chat_base_url: Optional[str] = None
     llm_model: str = "gpt-4o-mini"
     asr_model: str = "gpt-4o-mini-transcribe"
     asr_fallback_model: str = "whisper-1"
@@ -92,6 +99,9 @@ class Settings:
     flashrank_model: str = "ms-marco-TinyBERT-L-2-v2"
     cors_origins: List[str] = field(default_factory=lambda: list(DEFAULT_CORS_ORIGINS))
     static_dir: Optional[Path] = None
+    # Public-demo mode: per-IP rate limits, and the books present at boot
+    # cannot be deleted by visitors (see app/demo.py).
+    demo: bool = False
 
     @property
     def openai_configured(self) -> bool:
@@ -149,10 +159,21 @@ def load_settings(env_file: Optional[Path] = None) -> Settings:
     static_raw = _env_str("BOOKTALK_STATIC_DIR")
     static_dir = Path(static_raw).expanduser() if static_raw else None
 
+    # BOOKTALK_CHAT_API_KEY / _BASE_URL are generic; DEEPSEEK_API_KEY is the
+    # shorthand that also implies DeepSeek's endpoint and model.
+    deepseek_key = _env_str("DEEPSEEK_API_KEY")
+    chat_key = _env_str("BOOKTALK_CHAT_API_KEY") or deepseek_key
+    chat_base_url = _env_str("BOOKTALK_CHAT_BASE_URL") or (
+        DEEPSEEK_BASE_URL if chat_key and chat_key == deepseek_key else ""
+    )
+    default_llm = DEEPSEEK_MODEL if chat_base_url == DEEPSEEK_BASE_URL else "gpt-4o-mini"
+
     return Settings(
         openai_api_key=_env_str("OPENAI_API_KEY"),
         openai_base_url=_env_str("OPENAI_BASE_URL") or None,
-        llm_model=_env_str("BOOKTALK_LLM_MODEL", "gpt-4o-mini"),
+        chat_api_key=chat_key,
+        chat_base_url=chat_base_url or None,
+        llm_model=_env_str("BOOKTALK_LLM_MODEL", default_llm),
         asr_model=_env_str("BOOKTALK_ASR_MODEL", "gpt-4o-mini-transcribe"),
         tts_model=_env_str("BOOKTALK_TTS_MODEL", "gpt-4o-mini-tts"),
         tts_voice=_env_str("BOOKTALK_TTS_VOICE", "alloy"),
@@ -170,6 +191,7 @@ def load_settings(env_file: Optional[Path] = None) -> Settings:
         ),
         cors_origins=origins,
         static_dir=static_dir,
+        demo=_env_bool("BOOKTALK_DEMO", False),
     )
 
 

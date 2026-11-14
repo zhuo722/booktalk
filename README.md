@@ -104,6 +104,28 @@ the `--report`/`--results` redirect above.
 
 ---
 
+## Deploying a public demo
+
+The root `Dockerfile` builds one image — the FastAPI backend serving the built
+frontend on port 7860 — and boots with the five example books already indexed
+(`deploy/seed/`, rebuilt by `python3 scripts/make_demo_seed.py`), so a fresh container
+answers questions without spending anything on ingestion.
+
+```bash
+docker build -t booktalk .
+docker run -p 7860:7860 -e OPENAI_API_KEY=... -e DEEPSEEK_API_KEY=... booktalk
+```
+
+The image sets `BOOKTALK_DEMO=1`: per-IP hourly limits and a global daily cap on
+uploads, questions and voice input, a 20 MB upload limit, and the seeded books cannot be
+deleted (`backend/app/demo.py`). `DEEPSEEK_API_KEY` is optional — when set, every chat
+completion (answers, query rewrite, ingest enrichment) goes to `deepseek-chat`, while
+embeddings, ASR and TTS stay on OpenAI, which DeepSeek does not offer. The hosted demo
+runs as a Docker Space on Hugging Face (`deploy/hf/README.md` is its Space card); the
+two keys are Space secrets.
+
+---
+
 ## Does the retrieval actually work?
 
 `backend/eval/` builds a 25-page, 12-chapter fixture book about an archipelago that does

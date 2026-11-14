@@ -70,6 +70,18 @@ class OpenAIClient:
             max_retries=MAX_RETRIES,
             timeout=REQUEST_TIMEOUT_S,
         )
+        # Chat completions may go to a different OpenAI-compatible provider
+        # (DeepSeek); embeddings, ASR and TTS always stay on ``_client``.
+        self._chat_client = (
+            OpenAI(
+                api_key=settings.chat_api_key,
+                base_url=settings.chat_base_url or "https://api.openai.com/v1",
+                max_retries=MAX_RETRIES,
+                timeout=REQUEST_TIMEOUT_S,
+            )
+            if settings.chat_api_key
+            else self._client
+        )
 
     def embed(self, texts: List[str]) -> List[List[float]]:
         response = self._client.embeddings.create(
@@ -114,7 +126,7 @@ class OpenAIClient:
 
     def chat_stream(self, messages: List[Dict[str, str]], **kw: Any) -> Iterator[str]:
         params = self._chat_params(kw)
-        stream = self._client.chat.completions.create(
+        stream = self._chat_client.chat.completions.create(
             messages=messages, stream=True, **params
         )
         for event in stream:
@@ -127,7 +139,7 @@ class OpenAIClient:
 
     def chat(self, messages: List[Dict[str, str]], **kw: Any) -> str:
         params = self._chat_params(kw)
-        response = self._client.chat.completions.create(messages=messages, **params)
+        response = self._chat_client.chat.completions.create(messages=messages, **params)
         return (response.choices[0].message.content or "").strip()
 
     def tts(self, text: str) -> bytes:

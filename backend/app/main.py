@@ -16,7 +16,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from app import __version__
+from app import __version__, demo
 from app.api import asr, books, chat
 from app.config import BACKEND_DIR, Settings, load_settings
 from app.db import init_db
@@ -63,6 +63,8 @@ def create_app(
     app.state.turns = TurnRegistry()
     app.state.reranker = None
     _prewarm_reranker(app, settings)
+    if settings.demo:
+        demo.install(app, frozenset(book.id for book in app.state.store.list_books()))
 
     @app.get("/api/health", response_model=HealthResponse, tags=["meta"])
     def health() -> HealthResponse:
