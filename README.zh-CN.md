@@ -2,7 +2,7 @@
 
 [English](README.md) · **中文**
 
-**在线演示：[https://booktalk-a31g.onrender.com](https://booktalk-a31g.onrender.com)** —— 预置五本公版书，选一本直接提问。（免费实例，一段时间无人访问后首次打开约需一分钟唤醒。）
+**在线演示：[https://booktalk-a31g.onrender.com](https://booktalk-a31g.onrender.com)** —— 预置五本公版书（鲁迅《呐喊》《朝花夕拾》、沈复《浮生六记》、*Alice*、*Jekyll & Hyde*），选一本直接提问。（免费实例，一段时间无人访问后首次打开约需一分钟唤醒。）
 
 上传一本 PDF 书，开口问它一个问题，然后听这本书回答 —— 答案基于书自己的页面，用到的段落
 同时显示在屏幕上。有意思的地方不是它能跑通，而是它跑得*多快*、*多诚实*：语言模型还在写

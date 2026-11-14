@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Build five real public-domain books as BookTalk-friendly PDFs.
+"""Build the two English public-domain example books as BookTalk-friendly PDFs.
+
+The Chinese examples are built by ``build_simplified_chinese_examples.py``.
 
 The source texts are the complete UTF-8 transcriptions published by Project
 Gutenberg.  This script only changes their presentation: it removes the
@@ -64,36 +66,6 @@ class Book:
 
 
 BOOKS: Tuple[Book, ...] = (
-    Book(
-        source_name="analects.txt",
-        output_name="01-论语-孔子.pdf",
-        title="論語",
-        author="孔子及其弟子",
-        language="zh",
-        ebook_id=23839,
-        body_start="學而第一",
-        heading_pattern=r"^[\u3400-\u9fff]{2,10}第[" + CHINESE_NUMERALS + r"]+$",
-    ),
-    Book(
-        source_name="dao_de_jing.txt",
-        output_name="02-道德经-老子.pdf",
-        title="道德經",
-        author="老子",
-        language="zh",
-        ebook_id=7337,
-        body_start="第一章",
-        heading_pattern=r"^第[" + CHINESE_NUMERALS + r"]+章$",
-    ),
-    Book(
-        source_name="art_of_war.txt",
-        output_name="03-孙子兵法-孙武.pdf",
-        title="孫子兵法",
-        author="孫武",
-        language="zh",
-        ebook_id=12407,
-        body_start="始計第一",
-        heading_pattern=r"^[\u3400-\u9fff]{2,10}第[" + CHINESE_NUMERALS + r"]+$",
-    ),
     Book(
         source_name="alice.txt",
         output_name="04-Alices-Adventures-in-Wonderland-Lewis-Carroll.pdf",
@@ -273,9 +245,12 @@ def decorate(canvas, doc) -> None:
     if canvas.getPageNumber() <= 1:
         return
     canvas.saveState()
-    canvas.setFont("Helvetica", 8)
     canvas.setFillColorRGB(0.35, 0.35, 0.35)
+    # Helvetica has no CJK glyphs: a Chinese running title needs the CID font.
+    title_font = "Helvetica" if doc.running_title.isascii() else "STSong-Light"
+    canvas.setFont(title_font, 8)
     canvas.drawString(48, A4[1] - 33, doc.running_title)
+    canvas.setFont("Helvetica", 8)
     canvas.drawCentredString(A4[0] / 2, 28, str(canvas.getPageNumber()))
     canvas.restoreState()
 
